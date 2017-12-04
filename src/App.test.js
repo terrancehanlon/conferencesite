@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, render } from 'enzyme';
 import App from './App';
 import CallToAction from './components/CallToAction';
 import ScheduleList from './components/ScheduleList';
@@ -28,4 +28,9 @@ it('Renders Speakers', () => {
 it('Renders Timer', () => {
   const app = shallow(<App />);
   expect(app.contains(<Timer />)).toEqual(true);
+});
+
+it('CallToAction has content', () => {
+  const wrapper = render(<CallToAction title="unique" />);
+  expect(wrapper.text()).to.contain('unique');
 });
