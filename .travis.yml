@@ -12,3 +12,12 @@ script:
 branches:
   only:
   - master
+deploy:
+  - provider: pages
+    email: terrance@harvestprofit.com
+    github_token: $GITHUB_TOKEN
+    local_dir: build
+    name: Terrance
+    on:
+      branch: master
+    skip_cleanup: true
