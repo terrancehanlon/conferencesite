@@ -32,5 +32,5 @@ it('Renders Timer', () => {
 
 it('CallToAction has content', () => {
   const wrapper = render(<CallToAction title="unique" />);
-  expect(wrapper.text()).to.contain('unique');
+  expect(wrapper.text()).to.contain('unique').toEqual(true);
 });
