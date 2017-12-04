@@ -1,1 +1,1 @@
-TODO 
+[![Build Status](https://travis-ci.org/terrancehanlon/conferencesite.svg?branch=master)](https://travis-ci.org/terrancehanlon/conferencesite) [![codecov](https://codecov.io/gh/terrancehanlon/conferencesite/branch/master/graph/badge.svg)](https://codecov.io/gh/terrancehanlon/conferencesite)
